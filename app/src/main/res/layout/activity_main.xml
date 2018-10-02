@@ -1,0 +1,90 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:orientation="horizontal"
+    android:background="#FFFFCC"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:background="#FFFFCC"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:id="@+id/team1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team1"
+            android:textSize="50sp"/>
+        <TextView
+            android:id="@+id/score1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:text="@string/zero"/>
+
+        <Button
+            android:id="@+id/addSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addScore6"
+            android:text="@string/sixPoint" />
+
+        <Button
+            android:id="@+id/addTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addScore2"
+            android:text="@string/twoPoint" />
+
+        <Button
+            android:id="@+id/addOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addScore1"
+            android:text="@string/onePoint" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:background="#FFFFCC"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:id="@+id/team2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team2"
+            android:textSize="50sp"/>
+        <TextView
+            android:id="@+id/score2"
+            android:textSize="35sp"
+            android:text="@string/zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/addSix2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addScore6v2"
+            android:text="@string/sixPoint" />
+
+        <Button
+            android:id="@+id/addTwo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addScore2v2"
+            android:text="@string/twoPoint" />
+
+        <Button
+            android:id="@+id/addOne2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addScore1v2"
+            android:text="@string/onePoint" />
+    </LinearLayout>
+</LinearLayout>
